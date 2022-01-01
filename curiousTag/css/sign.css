@@ -1,0 +1,122 @@
+
+.contents {
+    margin-top: 80px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.contents h3 {
+    max-width: 410px;
+    width: 100%;
+    box-shadow: 0 1px 0 0 rgba(38, 8, 99, 0.021);
+    padding: 10px 10px 10px 0;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.1),rgba(255, 255, 255), rgba(255, 255, 255, 0.1));
+}
+.contents h3 i {
+    padding: 10px 10px 10px 0;
+}
+.contents .form {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    max-width: 340px;
+    padding: 10px;
+    width: 100%;
+    /* box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.123); */
+    background: rgba(255, 255, 255, 0.42);
+}
+.form .image {
+    margin-top: 20px;
+    height: 45px;
+    width: 120px;
+    align-self: center;
+    /* border: 1px solid red; */
+}
+.form .image img {
+    height: 100%;
+    width: 100%;
+}
+.form p {
+    /* background: rgb(236, 99, 99); */
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    /* color: white; */
+    color: rgb(236, 99, 99);
+}
+.form form { 
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+} 
+.form form ul {
+    width: 95%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.form li {
+    align-self: center;
+    display: flex;
+    margin-top: 15px;
+    padding-left: 10px;
+    flex-grow: 1;
+    align-items: baseline;
+    /* border: 1px solid red; */
+    border: 1px solid rgba(38, 8, 99, 0.089);
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 2px;
+}
+.form li input {
+    padding: 15px;
+    background: none;
+    border: none;
+    /* border-bottom: 1px solid rgba(38, 8, 99, 0.212); */
+    margin-left: 15px;
+    /* border-radius: 2px; */
+    flex-grow: 1;
+}
+/************this removes input field outline and background on active state*************/
+
+input:focus,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    outline: none;
+    /* outline: 1px solid rgba(20, 221, 20, 0.74); */
+    transition: background-color 5000s ease-in-out 0s;
+    /* box-shadow: 0 1px 0 0 rgba(74, 72, 78, 0.493); */
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.42), rgba(255, 255, 255));
+}
+.form li i {
+    border-right: 1px solid slategray;
+    padding-right: 10px;
+    color: slategray;
+}
+.form button[type='submit'] {
+    font-size: 28px;
+    border: none;
+    align-self: center;
+    max-width: 320px;
+    width: 100%;
+    background: none;
+    padding: 0;
+    border-radius: 2px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    background: slategray;
+    color: white;
+}
+.form button[type='submit']:hover,
+.form button[type='submit']:focus {
+    /* font-size: 32px; */
+    /* box-shadow: none; */
+    outline: none;
+    background: linear-gradient(to right,rgba(112, 128, 144, 0.482),slategray,rgba(112, 128, 144, 0.482));
+}

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>curious tag</title>
+    <script src="https://kit.fontawesome.com/72c15526ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/room.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+</head>
+<body>
+    <div class = "packet">
+    </div>
+
+    <div class = "header">
+        <div id="logo">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <div class="userinfo">
+        <ul class="info">
+            <li id="settings"><i class="fas fa-cog"></i></li>
+        </ul>
+    </div>
+
+    <div class="settings" id="settingsto">
+        <!-- essential navigation list -->
+        <div class="navli">
+            <ul>
+                <li class="close">X</li>    
+                <li class="profile">
+                    <div class="image">
+                        <img src="../images/bulbOn.png" alt="profileimage">
+                    </div>
+                    <ul>
+                        <li>King dragon</li>
+                        <li id="time"><i class="far fa-clock"></i> 01:02:25 PM</li>
+                    </ul>
+                </li>
+                <li id="edituser"><a href="/user"><i class="fas fa-user-edit"></i><span>Edit Profile</span></a></li>
+                <li id="signout"><a href="/signout"><i class="fas fa-sign-out-alt"></i><span>Sign Out</span></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sessionNcontrol">
+        <p class="session" id="session"></p> 
+        <ul class="jump">
+            <li class="trigger">&#10094;</li>
+            <li class="trigger" id="devices"><i class="fas fa-plus-circle"></i> Devices</li>
+            <li class="trigger">&#10095;</li>
+        </ul>
+    </div>
+
+    <!-- trigger fro every navigation -->
+    <div class="nav" id="nav">
+        <ul>
+            <li><a  href="/validUser"><i class="fas fa-bars"></i><span>Home</span></a></li>
+            <li><a  href="/validuser/mc"><i class="fas fa-laptop-house"></i><span>Devices</span></a></li>
+            <li><a  href="/validUser/roomInfo"><i class="fas fa-home"></i><span>Room</span></a></li>
+        </ul>
+    </div>
+
+    <div class="roomStatus">
+        <h4>Room Condition:</h4>
+        <div class="roomSensReading">
+            <p>24 &#8451;</p>
+            <p>65 &percnt;</p>
+            <p>19 &#9788;</p>
+        </div>
+    </div>
+
+    <div class="legitInfo">
+        
+        <div class="row">
+            <div id="orange" class="details">
+                <div class="row1">
+                    <h4 class="column1">Orange</h4>
+                    <p class="column2">Status: <em>Optimum</em></p>
+                    <p class="column3"><i class="fas fa-chevron-up"></i></p>
+                    <p class="column4">&#10008;</p>
+                </div>
+                <ul>
+                    <li>Box1</li>
+                    <li>Box2</li>
+                    <li>Box3</li>
+                    <li>Box4</li>
+                    <li>Box5</li>
+                </ul>
+                
+                <div id="box1">
+                    <div class="details">
+                        <img src="./images/bulbOn.png" alt="" height="100"width="100">
+                        <p>Empty!</p>
+                    </div>
+                    <form action="/test" method="POST">
+                        <span><input type="checkbox" value="box1"> Mark Filled</span>
+                        <button type="submit">Fill</button>
+                    </form></li>
+                </div>
+                
+            </div>
+            <div id="pineapple" class="details">
+                <div class="row1">
+                    <h4 class="column1">Pineapple</h4>
+                    <p class="column2">Status: <em>Optimum</em></p>
+                    <p class="column3"><i class="fas fa-chevron-up"></i></p>
+                    <p class="column4">&#10008;</p>
+                </div>
+            </div>
+            <div id="kiwi" class="details">
+                <div class="row1">
+                    <h4 class="column1">Kiwi</h4>
+                    <p class="column2">Status: <em>Optimum</em></p>
+                    <p class="column3"><i class="fas fa-chevron-up"></i></p>
+                    <p class="column4">&#10008;</p>
+                </div>
+            </div>
+            <div id="passionFruit" class="details">
+                <div class="row1">
+                    <h4 class="column1">Passion Fruit</h4>
+                    <p class="column2">Status: <em>Optimum</em></p>
+                    <p class="column3"><i class="fas fa-chevron-up"></i></p>
+                    <p class="column4">&#10008;</p>
+                </div>
+            </div>
+            <div id="gooseberry" class="details">
+                <div class="row1">
+                    <h4 class="column1">Gooseberry</h4>
+                    <p class="column2">Status: <em>Optimum</em></p>
+                    <p class="column3"><i class="fas fa-chevron-up"></i></p>
+                    <p class="column4">&#10008;</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+ 
+</body>
+    <!-- to be applied to all pages  -->
+    <script src="../javascript/general.js"></script> 
+    <script src="../javascript/validRoomInfo.js"></script> 
+</html>

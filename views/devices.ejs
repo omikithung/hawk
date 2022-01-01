@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curious tag</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/sign.css" />
+    <link rel="stylesheet" href="../css/contributors.css" />
+    <link rel="stylesheet" href="../css/vhome.css" />
+    <link rel="stylesheet" href="../css/devices.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="../images/logo.png" alt="logo" />
+      </div>
+      <div class="menu"><i class="fas fa-bars"></i></div>
+      <ul class="navi">
+        <!-- <li class="naviLi"><a href="/validUser"><i class="fas fa-bars"></i><span>Home</span></a></li> -->
+        <li class="naviLi">
+          <a href="/u/devices"
+            ><i class="fas fa-laptop-house"></i><span>Devices</span></a
+          >
+        </li>
+        <li class="naviLi">
+          <a href="/u"><i class="fas fa-home"></i><span>Home</span></a>
+        </li>
+        <li class="naviLi" id="settingsT">
+          <i class="fas fa-cog"></i> <span>Settings</span>
+        </li>
+        <li class="menuInDevices">
+          <ul>
+            <h4>Add device to screen.</h4>
+            <li id=""><i class="fas fa-lightbulb"></i><span>Light 1</span></li>
+            <li id=""><i class="fas fa-lightbulb"></i><span>Light 2</span></li>
+            <li id=""><i class="fas fa-tint"></i><span>Humidity</span></li>
+            <li id="">
+              <i class="fas fa-thermometer-half"></i><span>Temperature</span>
+            </li>
+            <li id=""><i>&#9788;</i> <span>LDR Intensity</span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="slide showing">
+        <div class="cimage1">
+          <img src="../images/bg1.jpg" alt="image" />
+        </div>
+      </div>
+      <div class="slide">
+        <div class="cimage1">
+          <img src="../images/bg2.jpg" alt="image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="devices">
+        <h3><i class="fas fa-laptop-house"></i> Devices:</h3>
+        <div class="legitInfo">
+          <div id="light1" class="details">
+            <div class="row1">
+              <h4 class="column1">Light 1</h4>
+              <p class="column2">Status: <em>Off</em></p>
+              <h4 class="column3"><i class="fas fa-chevron-up"></i></h4>
+              <h4 class="column4">&#10008;</h4>
+            </div>
+            <div class="row2">
+              <div class="column1">
+                <div class="iconImage">
+                  <img src="../images/bulbOff.png" alt="lightOn" />
+                </div>
+              </div>
+              <div class="control">
+                <p>ON</p>
+                <p>OFF</p>
+              </div>
+            </div>
+          </div>
+          <div id="light2" class="details">
+            <div class="row1">
+              <h4 class="column1">Light 2</h4>
+              <p class="column2">Status: <em>Off</em></p>
+              <h4 class="column3"><i class="fas fa-chevron-up"></i></h4>
+              <h4 class="column4">&#10008;</h4>
+            </div>
+            <div class="row2">
+              <div class="column1">
+                <div class="iconImage">
+                  <img src="../images/bulbOff.png" alt="lightOn" />
+                </div>
+              </div>
+              <div class="control">
+                <p>ON</p>
+                <p>OFF</p>
+              </div>
+            </div>
+          </div>
+          <div id="humidity" class="details">
+            <div class="row1">
+              <h4 class="column1">Humidity</h4>
+              <p class="column2">Status: <em>50 &percnt;</em></p>
+              <h4 class="column3"><i class="fas fa-chevron-up"></i></h4>
+              <h4 class="column4">&#10008;</h4>
+            </div>
+            <div class="row2">
+              <div class="column1">
+                <div class="iconImage">
+                  <img src="../images/humidDrop.png" alt="humidity" />
+                </div>
+              </div>
+              <div class="control control1">
+                <p>45 &percnt;</p>
+                <meter
+                  id="h"
+                  value="56"
+                  min="0"
+                  low="30"
+                  max="100"
+                  high="65"
+                  optimum="45"
+                ></meter>
+              </div>
+            </div>
+          </div>
+          <div id="temperature" class="details">
+            <div class="row1">
+              <h4 class="column1">Temperature</h4>
+              <p class="column2">Status: <em>23 &#8451;</em></p>
+              <h4 class="column3"><i class="fas fa-chevron-up"></i></h4>
+              <h4 class="column4">&#10008;</h4>
+            </div>
+            <div class="row2">
+              <div class="column1">
+                <div class="iconImage">
+                  <img src="../images/temp.png" alt="lightOn" />
+                </div>
+              </div>
+              <div class="control control1">
+                <p>23 &#8451;</p>
+                <meter
+                  id="t"
+                  value="24"
+                  min="-273"
+                  low="20"
+                  max="1000"
+                  high="35"
+                  optimum="25"
+                ></meter>
+              </div>
+            </div>
+          </div>
+          <div id="ldrIntensity" class="details">
+            <div class="row1">
+              <h4 class="column1">LDR Intensity</h4>
+              <p class="column2">Status: <em>19 &#9788;</em></p>
+              <h4 class="column3"><i class="fas fa-chevron-up"></i></h4>
+              <h4 class="column4">&#10008;</h4>
+            </div>
+            <div class="row2">
+              <div class="column1">
+                <div class="iconImage">
+                  <img src="../images/sun.png" alt="lightOn" />
+                </div>
+              </div>
+              <div class="control control1">
+                <p>19 &#9788;</p>
+                <meter
+                  id="i"
+                  value="20"
+                  min="0"
+                  low="10"
+                  max="100"
+                  high="45"
+                  optimum="30"
+                ></meter>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <ul class="secondaryMenu">
+        <li class="settingsT"><i class="fas fa-cog"></i> <span></span></li>
+    </ul> -->
+    <div class="settings" id="settingsMenu">
+      <!-- essential navigation list -->
+      <div class="navli">
+        <ul class="ul">
+          <li class="close">X</li>
+          <li class="profile">
+            <div class="image">
+              <img src="../images/bulbOn.png" alt="profileimage" />
+            </div>
+            <ul>
+              <li><h3>King dragon</h3></li>
+              <li id="time"><i class="far fa-clock"></i> 01:02:25 PM</li>
+            </ul>
+          </li>
+          <li id="edituser">
+            <a href="/user"
+              ><i class="fas fa-user-edit"></i><span>Edit Profile</span></a
+            >
+          </li>
+          <li id="signout">
+            <a href="/signout"
+              ><i class="fas fa-sign-out-alt"></i><span>Sign Out</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="../javascript/home.js"></script>
+  <script src="../javascript/devices.js"></script>
+  <script src="../javascript/devicesWS.js"></script>
+</html>

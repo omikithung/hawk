@@ -1,0 +1,89 @@
+
+.c {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 80px;
+    vertical-align: baseline;
+    justify-content: space-around;
+}
+.c .title {
+    width:100%;
+    text-align: center;
+    height: max-content;
+    /* border: 1px solid red; */
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.1),rgba(255, 255, 255), rgba(255, 255, 255, 0.1));
+    padding: 10px;
+    margin: 0;
+}
+.cInfo {
+    max-width: 320px;
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.397);
+    flex: 1;
+    box-shadow: 0 0 1px 0 rgba(38, 8, 99, 0.315);
+    margin: 5px;
+    border-radius: 2px;
+    padding: 20px;
+    height: max-content;
+}
+.head {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.cdetails {
+    margin-left: 10px;
+    align-self: center;
+}
+.cdetails ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contactInfo {
+    list-style-type: none;
+    padding: 0;
+    border-top: 1px solid rgba(38, 8, 99, 0.034);
+}
+.cdetails li,
+.contactInfo li {
+    list-style-type: none;
+    padding: 0;
+    padding: 10px;
+    width: 100%;
+}
+.cdetails h4 {
+    margin: 5px;
+    width: 100%;
+}
+.cc {
+    margin-top: 10px;
+    border-top: 1px solid rgba(38, 8, 99, 0.034);
+}
+.cdetails span,
+.cInfo ul span {
+    margin-left: 10px;
+}
+.cimage {
+    border: 5px solid whitesmoke;
+    max-width: 100px;
+    height: 100px;
+    align-self: center;
+    border-radius: 50%;
+    overflow: hidden;
+    /* display: block; */
+}
+.cimage img {
+    width: 100%;
+    height: 100%;
+}
+.cc {
+    /* border: 1px solid red; */
+    display: block;
+    width: 100%;
+}
+.cc p {
+    text-align: justify;
+}
