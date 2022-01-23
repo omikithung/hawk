@@ -1,7 +1,1 @@
-# Auto detect text files and perform LF normalization
 
-*.t linguist-detectable=false
-*.h linguist-language=C
-*.c linguist-language=C
-*.scss linguist-detectable=false
-generated/*.d linguist-generated=true
