@@ -3,3 +3,4 @@
 *.t linguist-detectable=false
 *.h linguist-language=C
 *.c linguist-language=C
+generated/*.d linguist-generated=true
